@@ -1,0 +1,13 @@
+#app {
+  flex: 1;
+  align-self: center;
+  justify-content: center;
+  align-content: center;
+
+  .counter {
+    .count {
+      padding-top: 120px;
+      margin-bottom: 60px;
+    }
+  }
+}
