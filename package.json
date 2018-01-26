@@ -10,6 +10,11 @@
     "build": "brunch build --production"
   },
   "dependencies": {
+    "credit-card-type": "^6.1.0",
+    "react-payment-card-component": "^0.1.0",
+    "redux-form": "^7.2.1",
+    "classnames": "^2.2.5",
+    "react-select": "^1.2.1",
     "prop-types": "^15.5.10",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
@@ -17,7 +22,6 @@
     "redux": "^3.6.0"
   },
   "devDependencies": {
-    "process-env-brunch": "^1.4.5",
     "auto-reload-brunch": "^2.7.1",
     "babel-brunch": "~6.0",
     "babel-preset-latest": "^6",
@@ -31,6 +35,7 @@
     "eslint-plugin-jsx-a11y": "^4.0.0",
     "eslint-plugin-react": "^6.10.3",
     "jquery": "^3.1.1",
+    "process-env-brunch": "^1.4.5",
     "sass-brunch": "^2.10.4",
     "uglify-js-brunch": "^2"
   }

@@ -1,0 +1,55 @@
+.navbar {
+  &__title, &__profile {
+    margin: 0;
+    font-weight: bold;
+    color: #000;
+  }
+
+  &__title {
+    font-size: 2.325rem;
+  }
+
+  &__profile {
+    padding-top: 27px;
+    padding-bottom: 27px;
+    line-height: 1;
+    font-size: 2rem;
+  }
+
+  &-inverse {
+    .navbar__title, .navbar__profile {
+      color: #fff;
+    }
+  }
+}
+
+.app_intro {
+  text-align: center;
+
+  &__title {
+    font-weight: bold;
+    font-size: 4.375rem;
+    margin-bottom: 82px;
+  }
+
+  .step {
+    text-align: center;
+    border-bottom: 1px solid $color-gray_clear;
+    margin-bottom: 6px;
+
+    &__item {
+      float: left;
+      display: block;
+      width: 25%;
+      padding: 45px 20px;
+      text-decoration: none;
+      color: $color-primary;
+      font-size: 2.75rem;
+      font-weight: bold;
+    }
+    &__active {
+      color: #fff;
+      background-color: $color-primary;
+    }
+  }
+}

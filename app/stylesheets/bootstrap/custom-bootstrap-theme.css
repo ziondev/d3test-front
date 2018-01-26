@@ -254,8 +254,8 @@ th {
 }
 @font-face {
     font-family: 'Glyphicons Halflings';
-    src: url('../fonts/glyphicons-halflings-regular.eot');
-    src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff2') format('woff2'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+    src: url('http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/fonts/glyphicons-halflings-regular.eot');
+    src: url('http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/fonts/glyphicons-halflings-regular.woff2') format('woff2'), url('http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/fonts/glyphicons-halflings-regular.woff') format('woff'), url('http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
 }
 .glyphicon {
     position: relative;
@@ -2539,7 +2539,7 @@ output {
     display: block;
     width: 100%;
     height: 64px;
-    padding: 21px 38px;
+    padding: 21px 32px;
     font-size: 14px;
     line-height: 1.42857143;
     color: #555555;
@@ -2893,7 +2893,7 @@ select[multiple].input-lg {
     background-color: #f2dede;
 }
 .has-error .form-control-feedback {
-    color: #b9092f;
+    color: #9a9a9a;
 }
 .has-feedback label ~ .form-control-feedback {
     top: 25px;
@@ -2906,6 +2906,20 @@ select[multiple].input-lg {
     margin-top: 5px;
     margin-bottom: 10px;
     color: #737373;
+}
+
+.form-inline .control-label {
+    margin-bottom: 0;
+    vertical-align: middle;
+    font-size: 14px;
+    padding-right: 14px;
+    color: #9c9c9c;
+}
+
+@media (max-width: 767px) {
+    .form-inline .control-label {
+        padding-bottom: 5px !important;
+    }
 }
 @media (min-width: 768px) {
     .form-inline .form-group {
@@ -2932,13 +2946,6 @@ select[multiple].input-lg {
     }
     .form-inline .input-group > .form-control {
         width: 100%;
-    }
-    .form-inline .control-label {
-        margin-bottom: 0;
-        vertical-align: middle;
-        font-size: 14px;
-        padding-right: 14px;
-        color: #9c9c9c;
     }
     .form-inline .radio,
     .form-inline .checkbox {
@@ -3009,7 +3016,7 @@ select[multiple].input-lg {
     background-image: none;
     border: 1px solid transparent;
     white-space: nowrap;
-    padding: 21px 38px;
+    padding: 21px 32px;
     font-size: 14px;
     line-height: 1.42857143;
     border-radius: 34px;
@@ -3889,7 +3896,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     vertical-align: middle;
 }
 .input-group-addon {
-    padding: 21px 38px;
+    padding: 21px 32px;
     font-size: 14px;
     font-weight: normal;
     line-height: 1;
@@ -4711,7 +4718,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 .pagination > li > span {
     position: relative;
     float: left;
-    padding: 21px 38px;
+    padding: 21px 32px;
     line-height: 1.42857143;
     text-decoration: none;
     color: #53890b;

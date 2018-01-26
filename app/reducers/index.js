@@ -1,8 +1,8 @@
 import { combineReducers } from 'redux';
-import counterReducer from './counterReducer';
+import { reducer as reducerForm } from 'redux-form';
 
 const rootReducer = combineReducers({
-  count: counterReducer
+    form: reducerForm
 });
 
 export default rootReducer;

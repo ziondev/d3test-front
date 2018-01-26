@@ -1,23 +1,17 @@
-@import "bootstrap/custom-theme.css";
+@import "bootstrap/custom-bootstrap-theme.css";
+@import "vendor/card.css";
+@import "vendor/card-types.css";
+@import "vendor/custom-select.css";
+@import "helpers/helpers";
+@import "helpers/media-query";
 @import "layout/header";
+@import "layout/footer";
+@import "layout/page";
+@import "components/payment_form";
 
 body {
-  font-size: 16px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-.navbar {
-  &__title {
-    margin: 0;
-    font-size: 2.325rem;
-    font-weight: bold;
-    color: #000;
-  }
-  &-inverse {
-    .navbar__title {
-      color: #fff;
-    }
-  }
-}
-#app {
+  font-size: 16px;
+  color: #000;
   text-align: left;
 }
