@@ -79,7 +79,7 @@
         margin: 5px;
 
         @include tablet-portrait-and-below {
-          margin: 20px 5px 5px 5px;
+          margin: 26px 5px 5px 5px;
         }
       }
     }
@@ -111,6 +111,12 @@
 
   .amount {
     margin-bottom: 50px;
+
+    @include tablet-portrait-and-below {
+      .glyphicon {
+        margin-top: 5px;
+      }
+    }
   }
 
   .form_buttons {
@@ -141,6 +147,39 @@
         width: 100%;
         min-width: auto;
       }
+    }
+  }
+
+  .price_aside {
+    @include tablet-landscape-and-below {
+      margin-top: 40px;
+    }
+
+    .fieldset_group__title {
+      margin-bottom: 16px;
+    }
+
+    .price {
+      font-size: 3.375rem;
+      font-weight: bold;
+      color: $color-primary;
+
+      .small {
+        font-size: 50%;
+      }
+    }
+
+    .fieldset__legend {
+      font-size: 14px;
+      margin-top: 20px;
+      margin-bottom: 5px;
+    }
+
+    .badges {
+      padding-left: 0;
+      list-style: none;
+      font-size: 12px;
+      line-height: 1.95
     }
   }
 }
